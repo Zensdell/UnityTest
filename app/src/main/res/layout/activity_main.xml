@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:text="Interstitial ad"
+            android:id="@+id/buttonInterstitial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Rewarded ad"
+            android:id="@+id/buttonRewarded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="Banner ad"
+            android:id="@+id/buttonBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayoutAdContainer"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="@color/black"
+            android:id="@+id/textViewCloseBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="5pt"
+            android:text="close"
+            android:padding="4dp"
+            android:textColor="@color/white"/>
+
+
+
+
+
+    </FrameLayout>
+
+
+
+</FrameLayout>
